@@ -1,1 +1,28 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+/* 🌙 Style only the mobile (collapsed) navbar */
+@media (max-width: 991.98px) {
+  /* The collapse container */
+  .navbar-collapse {
+    background-color: var(--bs-body-bg); /* or a custom color */
+    border-radius: 10px;
+    border: 1px solid var(--bs-border-color);
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  /* Each nav link inside the collapsed menu */
+  .navbar-collapse .nav-link {
+    display: block;
+    margin: 0.5rem 0;
+    text-align: center;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 8px;
+    background-color: var(--bs-body-tertairy);
+  }
+  /* Optional hover/focus effects */
+  .navbar-collapse .nav-link:hover {
+    background-color: var(--bs-warning);
+  }
+  .col {
+    padding-bottom: 10%;
+  }
+}/*# sourceMappingURL=styles.css.map */
