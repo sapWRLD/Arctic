@@ -16,13 +16,15 @@
     text-align: center;
     border: 1px solid var(--bs-border-color);
     border-radius: 8px;
-    background-color: var(--bs-body-tertairy);
+    background-color: var(--bs-body-tertiary);
   }
   /* Optional hover/focus effects */
   .navbar-collapse .nav-link:hover {
     background-color: var(--bs-warning);
   }
   .col {
-    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
