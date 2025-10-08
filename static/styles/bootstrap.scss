@@ -1,3 +1,6 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 /* 🌙 Style only the mobile (collapsed) navbar */
 @media (max-width: 991.98px) {
   /* The collapse container */
@@ -30,4 +33,7 @@
         margin-bottom: 1.5rem;
     }
     
+}
+.table-container{
+    width: 50%;
 }
