@@ -34,6 +34,15 @@
     }
     
 }
-.table-container{
-    width: 50%;
+
+body {
+    background-color: aquamarine;
+}
+tbody{
+    .invalidcheck{
+        color: red;
+    }
+    p{
+        margin-top: 0.5rem;
+    }
 }
