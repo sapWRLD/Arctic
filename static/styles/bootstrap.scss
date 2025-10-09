@@ -34,10 +34,6 @@
     }
     
 }
-
-body {
-    background-color: aquamarine;
-}
 tbody{
     .invalidcheck{
         color: red;
@@ -45,4 +41,14 @@ tbody{
     p{
         margin-top: 0.5rem;
     }
+}
+.theme-btn{
+    background-color: red;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.theme-btn:hover{
+    background-color: rgb(255, 85, 85);
 }
