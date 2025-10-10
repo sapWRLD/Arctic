@@ -48,7 +48,7 @@
     </nav>
 </header>
 <body class="pt-5 my-5">
-    <div class="container text-center">
+    <div id="maincontainer" class="container text-center">
         <div class="row gx-5">
             <div class="col">
                 <div class="card" style="width: 18rem;">
@@ -65,22 +65,6 @@
                 <div class="card-body">
                     <a href="contact.html" class="card-link btn btn-primary ">Contact</a>
                     <button type="button" class="card-link btn btn-warning" data-bs-toggle="modal" data-bs-target="#moreInfoBronze">More info</button>
-                    <div class="modal fade" id="moreInfoBronze" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5>More info Basic</h5>
-                                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    More info basic body text
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
@@ -99,22 +83,6 @@
                 <div class="card-body">
                     <a href="contact.html" class="card-link btn btn-primary ">Contact</a>
                     <button type="button" class="card-link btn btn-warning" data-bs-toggle="modal" data-bs-target="#moreInfoSilver">More info</button>
-                    <div class="modal fade" id="moreInfoSilver" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5>More info Standard</h5>
-                                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    More info Standard body text
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
@@ -132,22 +100,6 @@
                 <div class="card-body">
                     <a href="contact.html" class="card-link btn btn-primary ">Contact</a>
                     <button type="button" class="card-link btn btn-warning" data-bs-toggle="modal" data-bs-target="#moreInfoGold">More info</button>
-                    <div class="modal fade" id="moreInfoGold" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5>More info Premium</h5>
-                                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    More info Premium body text
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
@@ -168,22 +120,6 @@
                 <div class="card-body">
                     <a href="contact.html" class="card-link btn btn-primary ">Contact</a>
                     <button type="button" class="card-link btn btn-warning" data-bs-toggle="modal" data-bs-target="#moreInfoCustom">More info</button>
-                    <div class="modal fade" id="moreInfoCustom" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5>More info Custom</h5>
-                                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    More info Custom body text
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
@@ -220,6 +156,72 @@
                         <tr><td><p>Custom site design</p></td><td><p class="invalidcheck fs-6 fw-bold">&Cross;</p></td><td><p class="invalidcheck fs-6 fw-bold">&Cross;</p></td><td><p class="invalidcheck fs-6 fw-bold">&Cross;</p></td><td><p>&check;</p></td></tr>
                     </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More info Modals -->
+    <div class="modal fade" id="moreInfoBronze" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>More info Basic</h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    More info basic body text
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="moreInfoSilver" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>More info Standard</h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    More info Standard body text
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="moreInfoGold" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>More info Premium</h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    More info Premium body text
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="moreInfoCustom" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>More info Custom</h5>
+                    <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    More info Custom body text
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
