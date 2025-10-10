@@ -11979,14 +11979,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-:root,
-[data-bs-theme=dark] {
+:root {
   --bs-body-bg: #121212;
-  --bs-body-gradient-180: linear-gradient(180deg,rgba(26, 93, 138, 1) 0%, rgba(15, 76, 117, 1) 12%, rgba(0, 48, 74, 1) 34%, rgba(10, 44, 63, 1) 49%, rgba(18, 18, 18, 1) 79%);
-  --bs-body-gradient-360: linear-gradient(360deg,rgba(26, 93, 138, 1) 0%, rgba(15, 76, 117, 1) 12%, rgba(0, 48, 74, 1) 34%, rgba(10, 44, 63, 1) 49%, rgba(18, 18, 18, 1) 79%);
+  --bs-body-gradient-180: linear-gradient(
+      180deg,
+      rgba(26, 93, 138, 1) 0%,
+      rgba(15, 76, 117, 1) 12%,
+      rgba(0, 48, 74, 1) 34%,
+      rgba(10, 44, 63, 1) 49%,
+      rgba(18, 18, 18, 1) 79%
+  );
+  --bs-body-gradient-360: linear-gradient(
+      360deg,
+      rgba(26, 93, 138, 1) 0%,
+      rgba(15, 76, 117, 1) 12%,
+      rgba(0, 48, 74, 1) 34%,
+      rgba(10, 44, 63, 1) 49%,
+      rgba(18, 18, 18, 1) 79%
+  );
   --glass-card-bg: rgba(18, 18, 18, 0.3);
   --glass-card-border: rgba(255, 255, 255, 0.1);
-  --bs-body-color: #e9ecef;
+  --bs-body-color: #ffffff;
   --bs-primary: #0dcaf0;
   --bs-secondary: #adb5bd;
   --bs-border-color: #343a40;
@@ -12027,14 +12040,6 @@ tbody .invalidcheck {
 }
 tbody p {
   margin-top: 0.5rem;
-}
-
-.theme-btn {
-  background-color: red;
-  border: none;
-  padding: 0.25rem;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 .theme-btn:hover {
@@ -12116,7 +12121,7 @@ tbody p {
   height: 95vh;
 }
 
-#maincontainerindex-titlescreen .card.glass-card {
+.card.glass-card {
   background: var(--glass-card-bg);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
