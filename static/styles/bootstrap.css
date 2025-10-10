@@ -12035,8 +12035,6 @@ tbody p {
   display: flex;
   align-items: center;
   background-color: var(--bs-body-bg);
-  border-top: 1px solid var(--bs-border-color);
-  border-bottom: 1px solid var(--bs-border-color);
 }
 .sections .section-item-bar .carousel-container {
   overflow: hidden;
@@ -12085,9 +12083,13 @@ tbody p {
     transform: translateX(-20%);
   }
 }
-.sections .section {
-  height: 100vh;
-  background-color: green;
+.sections .section-one {
+  height: 82vh;
+  background: linear-gradient(180deg, rgb(27, 60, 83) 0%, rgb(35, 76, 106) 34%, rgb(69, 104, 130) 69%, rgb(83, 115, 139) 75%, rgb(120, 145, 164) 86%, rgb(162, 179, 192) 93%, rgb(255, 255, 255) 100%);
+}
+.sections .section-two {
+  height: 85vh;
+  background: linear-gradient(360deg, rgb(27, 60, 83) 0%, rgb(35, 76, 106) 34%, rgb(69, 104, 130) 69%, rgb(83, 115, 139) 75%, rgb(120, 145, 164) 86%, rgb(162, 179, 192) 93%, rgb(255, 255, 255) 100%);
 }
 
 #maincontainerindex-titlescreen .card {
