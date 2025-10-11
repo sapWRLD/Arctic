@@ -12034,7 +12034,7 @@ textarea.form-control-lg {
     justify-content: center;
     margin-bottom: 1.5rem;
   }
-  #small-text-sectionone {
+  #small-text-sectionone, #arrowdown {
     display: none !important;
   }
   #maincard-button {
