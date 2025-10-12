@@ -12009,7 +12009,11 @@ textarea.form-control-lg {
 
 @media (min-width: 2550px) {
   #arrowdown {
-    margin-top: 20rem;
+    margin-top: 13rem;
+  }
+  #section-one-p {
+    margin-top: 7rem;
+    font-size: larger;
   }
   .sections .grid-container {
     width: min(120rem, 100%);
