@@ -26,29 +26,26 @@
     --bs-border-color: #343a40;
     --bs-body-tertiary: #1e1e1e;
 }
+@media (min-width: 2550px) {
+    #arrowdown{
+        margin-top: 20rem;
+    }
+    .sections .grid-container {
+        width: min(120rem, 100%);
+    }
+}
 
-@media (min-width: 1930px) {
-.grid-container {
-    width: min(110rem, 100%);
-    padding: 2rem;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-    gap: 3rem;
-}
-}
-/* 🌙 Style only the mobile (collapsed) navbar */
 @media (max-width: 991.98px) {
-  /* The collapse container */
+
     .navbar-collapse {
-        background-color: var(--bs-body-bg); /* or a custom color */
+        background-color: var(--bs-body-bg);
         border-radius: 10px;
         border: 1px solid var(--bs-border-color);
         padding: 1rem;
         margin: 0.5rem;
     }
 
-  /* Each nav link inside the collapsed menu */
+
     .navbar-collapse .nav-link {
         display: block;
         margin: 0.5rem 0;
@@ -58,7 +55,6 @@
         background-color: var(--bs-body-tertiary);
     }
 
-  /* Optional hover/focus effects */
     .navbar-collapse .nav-link:hover {
         background-color: var(--bs-warning);
     }
@@ -68,17 +64,24 @@
         justify-content: center;
         margin-bottom: 1.5rem;
     }
-    #small-text-sectionone , #arrowdown{
+    /*#small-text-sectionone , #arrowdown{
         display: none !important;
         
-    }
+    }*/
     #maincard-button{
         margin-top: 2.5rem;
     }
     .sections{
         #section-two {
             height: fit-content;
+            padding-bottom: 4rem;
 
+        }
+        #section-one{
+            height: fit-content;
+            #section-one-p{
+                display: none;
+            }
         }
     }
     
@@ -214,7 +217,7 @@ tbody{
     grid-template: 'title icon' 'content content' 'bar bar' / 1fr auto;
     font-family: system-ui, sans-serif;
     color: #444447;
-  .title {
+.title {
     color: #ffffff;
         font-size: 1.5rem;
         grid-area: title;
