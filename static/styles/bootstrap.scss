@@ -28,7 +28,7 @@
 }
 @media (min-width: 2550px) {
     #arrowdown{
-        margin-top: 13rem;
+        margin-top: 1.7rem;
     }
     #section-one-p{
         margin-top: 7rem;
@@ -36,6 +36,11 @@
     }
     .sections .grid-container {
         width: min(120rem, 100%);
+    }
+    .sections{
+        .section-item-bar{
+            margin-bottom: 5rem;
+        }
     }
 }
 
