@@ -27,6 +27,16 @@
     --bs-body-tertiary: #1e1e1e;
 }
 
+@media (min-width: 1930px) {
+.grid-container {
+    width: min(110rem, 100%);
+    padding: 2rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    gap: 3rem;
+}
+}
 /* 🌙 Style only the mobile (collapsed) navbar */
 @media (max-width: 991.98px) {
   /* The collapse container */
@@ -189,7 +199,7 @@ tbody{
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-    gap: 2rem;
+    gap: 3rem;
 }
 .custom-card {
     --grad: rgb(1, 46, 122), rgb(0, 157, 236);
