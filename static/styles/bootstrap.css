@@ -12151,6 +12151,9 @@ tbody p {
 .sections .section-two {
   height: 95vh;
 }
+.sections .section-item-bar {
+  margin-top: 2rem;
+}
 
 .arrow-button {
   margin-top: 5.5rem;
