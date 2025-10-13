@@ -203,6 +203,15 @@ tbody{
     color: var(--bs-body-color);
     transition: background 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
+
+.navbar.glass-bar {
+    background: var(--glass-card-bg);
+    backdrop-filter: blur(20px);
+}
+#footer {
+    background: var(--glass-card-bg);
+    backdrop-filter: blur(8px);
+}
 @import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
 
 .grid-container {
