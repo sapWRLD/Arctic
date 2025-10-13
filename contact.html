@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arctiq - Contact</title>
     <link rel="stylesheet" href="static/styles/bootstrap.css">
+    <link rel="stylesheet" href="static/styles/contactform.css">
     <link rel="icon" type="icon" href="Assets/Images/transparent_icon.png">
 </head>
     <!-- Google tag (gtag.js) -->
@@ -43,7 +44,96 @@
     </div>
     </nav>
 </header>
-<body class="pt-5">
+<body class="pt-5 bg-body-gradient-360" style="height: 100vh;">
+    <div class="card glass-card mx-auto p-4" style="width: 50rem; margin-top: 8rem;">
+    <form
+  action="https://formspree.io/f/{FORM_ID}"
+  class="fs-form fs-layout__2-column"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="business-area">Business Area</label>
+    <select class="fs-select" id="business-area" name="business-area" required style="background-color: rgb(40, 40, 40);">
+      <option value="dept-1">Dept 1</option>
+      <option value="dept-2">Dept 2</option>
+      <option value="dept-3">Dept 3</option>
+    </select>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="request-type">Type of Request</label>
+    <select class="fs-select" id="request-type" name="request-type" required>
+      <option value="product-inquiry">Product Inquiry</option>
+      <option value="purchase-request">Purchase Request</option>
+      <option value="general-inquiry">General Inquiry</option>
+    </select>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="title">Title</label>
+    <select class="fs-select" id="title" name="title" required>
+      <option value="mr">Mr</option>
+      <option value="ms">Ms</option>
+      <option value="mx">Mx</option>
+    </select>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="name">Name</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email</label>
+    <input class="fs-input" id="email" name="email" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="company">Company</label>
+    <input class="fs-input" id="company" name="company" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="country">Country</label>
+    <input class="fs-input" id="country" name="country" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="phone-number">Phone Number</label>
+    <input class="fs-input" id="phone-number" name="phone-number" />
+  </div>
+  <div class="fs-field col-span-full">
+    <label class="fs-label" for="message">Your Message</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+  </div>
+  <div class="fs-checkbox-field col-span-full">
+    <div class="fs-checkbox-wrapper">
+      <input
+        aria-describedby="dpa-consent-description"
+        class="fs-checkbox"
+        id="dpa-consent"
+        name="dpa-consent"
+        required
+        type="checkbox"
+        value="consent"
+      />
+    </div>
+    <div>
+      <label class="fs-label" for="dpa-consent">
+        Declaration of consent for data processing
+      </label>
+      <p class="fs-description" id="dpa-consent-description">
+        You agree that your data from the form will be collected and processed
+        to answer your request. You can revoke your consent at any time for the
+        future by e-mail to info@company.com. Detailed information on the
+        handling of user data can be found in our data protection declaration.
+      </p>
+    </div>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Submit</button>
+  </div>
+</form>
+</div>
 
 <footer class="bg-body fixed-bottom border-top py-1 text-center mt-auto z-1">
     <p  id="copyright">d</p>

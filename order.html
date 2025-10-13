@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctiq - Contact</title>
+    <link rel="stylesheet" href="static/styles/bootstrap.css">
+    <link rel="stylesheet" href="static/styles/orderform.css">
+    <link rel="icon" type="icon" href="Assets/Images/transparent_icon.png">
+</head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMTRQSSFB5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GMTRQSSFB5');
+</script>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border bottom bg-body z-1">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Assets/Images/transparent_icon.png" width="30" height="30" alt="icon">Arctiq</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+            <li class="nav-item mx-2 py-1">
+            <a class="nav-link bg-body-tertiary border rounded" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2 py-1">
+            <a class="nav-link bg-body-tertiary border rounded" href="features.html">Features</a>
+            </li>
+            <li class="nav-item mx-2 py-1">
+            <a class="nav-link bg-body-tertiary border rounded" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item mx-2 py-1">
+            <a class="nav-link active bg-body-tertiary border rounded" aria-current="page" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header>
+<body class="pt-5 bg-body-gradient-360">
+    <div class="card glass-card mx-auto my-5 p-4" style="width: 60rem;">
+        <form
+            action="https://formspree.io/f/{FORM_ID}"
+            class="fs-form fs-layout__2-column"
+            target="_top"
+            method="POST"
+            >
+            <fieldset>
+            <legend class="fs-fieldset-title">Project Information</legend>
+            <div class="fs-field">
+                <label class="fs-label" for="project-name">Project Name</label>
+                <input
+                    class="fs-input"
+                    id="project-name"
+                    name="project-name"
+                    placeholder="Enter the project name"
+                    required
+                />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="project-number">Project Number</label>
+                <input
+                    class="fs-input"
+                    id="project-number"
+                    name="project-number"
+                    placeholder="Enter the project number"
+                    required
+                />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="client-name">Client/Customer Name</label>
+                <input
+                    class="fs-input"
+                    id="client-name"
+                    name="client-name"
+                    placeholder="Enter the client/customer name"
+                    required
+                />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="contact-email">Contact Email</label>
+                <input
+                    class="fs-input"
+                    id="contact-email"
+                    name="contact-email"
+                    placeholder="Enter the contact email"
+                    required
+                />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="contact-phone">Contact Phone Number</label>
+                <input
+                    class="fs-input"
+                    id="contact-phone"
+                    name="contact-phone"
+                    placeholder="Enter the contact phone number"
+                    required
+                />
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend class="fs-fieldset-title">Change Order Details</legend>
+            <div class="fs-field">
+                <label class="fs-label" for="change-order-number">
+                    Change Order Number
+                </label>
+                <input
+                    class="fs-input"
+                    id="change-order-number"
+                    name="change-order-number"
+                    placeholder="Enter the change order number"
+                    required
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="date-of-request">Date of Request</label>
+                <input
+                    class="fs-input"
+                    id="date-of-request"
+                    name="date-of-request"
+                    placeholder="Enter the request date in MM-DD-YYYY format"
+                    required
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="requested-by">Requested By</label>
+                <input
+                    class="fs-input"
+                    id="requested-by"
+                    name="requested-by"
+                    placeholder="Enter the name of the requester"
+                    required
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="requester email">Requester Email</label>
+                <input
+                    class="fs-input"
+                    id="requester email"
+                    name="requester email"
+                    placeholder="Enter the email of the requester"
+                    required
+                />
+                </div>
+                <div class="fs-field col-span-full">
+                <label class="fs-label" for="change-description">
+                    Description of Change
+                </label>
+                <textarea
+                    class="fs-textarea"
+                    id="change-description"
+                    name="change-description"
+                    placeholder="Provide details about the requested change"
+                    required
+                ></textarea>
+                </div>
+                <div class="fs-field col-span-full">
+                <label class="fs-label" for="reason-for-change">Reason for Change</label>
+                <textarea
+                    class="fs-textarea"
+                    id="reason-for-change"
+                    name="reason-for-change"
+                    placeholder="e.g., &#x27;Client request,&#x27; &#x27;Budget adjustments,&#x27; etc."
+                    required
+                ></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="fs-fieldset-title">Cost and Schedule Impact</legend>
+                <div class="fs-field">
+                <label class="fs-label" for="additional-cost">
+                    Estimated Additional Cost
+                </label>
+                <input
+                    class="fs-input"
+                    id="additional-cost"
+                    name="additional-cost"
+                    placeholder="Enter the estimated additional cost"
+                    required
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="adjusted-total-cost">
+                    Adjusted Total Cost
+                </label>
+                <input
+                    class="fs-input"
+                    id="adjusted-total-cost"
+                    name="adjusted-total-cost"
+                    placeholder="Enter the adjusted total cost"
+                    required
+                />
+                </div>
+                <div class="fs-field col-span-full">
+                <label class="fs-label" for="schedule-impact">Impact on Schedule</label>
+                <textarea
+                    class="fs-textarea"
+                    id="schedule-impact"
+                    name="schedule-impact"
+                    placeholder="Describe the schedule impact, if any"
+                ></textarea>
+                </div>
+                <div class="fs-field col-span-full">
+                <label class="fs-label" for="new-completion-date">
+                    New Completion Date
+                </label>
+                <input
+                    class="fs-input"
+                    id="new-completion-date"
+                    name="new-completion-date"
+                    placeholder="Enter the new completion date in MM-DD-YYYY format"
+                />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="fs-fieldset-title">Approval and Acknowledgment</legend>
+                <div class="fs-field">
+                <label class="fs-label" for="approval-by">Approval By (Name)</label>
+                <input
+                    class="fs-input"
+                    id="approval-by"
+                    name="approval-by"
+                    placeholder="Enter the name of the approver"
+                    required
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="approval-date">Approval Due Date</label>
+                <input
+                    class="fs-input"
+                    id="approval-date"
+                    name="approval-date"
+                    placeholder="Enter the approval due date in MM-DD-YYYY format"
+                    required
+                />
+                </div>
+                <div class="fs-field col-span-full">
+                <label class="fs-label" for="comments-notes">Comments/Notes</label>
+                <textarea
+                    class="fs-textarea"
+                    id="comments-notes"
+                    name="comments-notes"
+                    placeholder="Add any additional remarks (optional)"
+                ></textarea>
+                </div>
+            </fieldset>
+            <div class="fs-checkbox-field col-span-full">
+                <div class="fs-checkbox-wrapper">
+                <input
+                    aria-describedby="acknowledge-terms-description"
+                    class="fs-checkbox"
+                    id="acknowledge-terms"
+                    name="acknowledge-terms"
+                    required
+                    type="checkbox"
+                    value="agree"
+                />
+                </div>
+                <div>
+                <label class="fs-label" for="acknowledge-terms">
+                    Acknowledgment of <a href="Terms_of_Service.html">Terms Of Service</a>
+                </label>
+                <p class="fs-description" id="acknowledge-terms-description">
+                    I understand and agree to the changes outlined above.
+                </p>
+                </div>
+            </div>
+            <div class="fs-button-group">
+                <button class="fs-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+<footer class="bg-body fixed-bottom border-top py-1 text-center mt-auto z-1">
+    <p  id="copyright">d</p>
+</footer>
+    <!-- Bootstrap script setup-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/copyright.js"></script>
+</body>
+</html>
