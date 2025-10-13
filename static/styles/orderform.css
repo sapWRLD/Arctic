@@ -383,42 +383,53 @@ fieldset {
 
 /* For mobile phones */
 @media (max-width: 768px) {
-  /* Stack form in one column */
-  .fs-form {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-
-  /* Make card narrower and centered */
-  .card.glass-card {
-    width: 95%;
-    max-width: 17rem; /* Thinner layout */
-    margin: 6rem auto 3rem auto;
-    padding: 1rem;
+  /* Make entire form one column */
+  .fs-form,
+  fieldset,
+  .fs-form.fs-layout__2-column {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  /* Stack fields full width */
+  /* Make the card thinner and stacked */
+  .card.glass-card {
+    width: 95%;
+    max-width: 18rem; /* fully stacked, narrower layout */
+    margin: 6rem auto 3rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Stack all form fields */
   .fs-field,
   .fs-description,
   .fs-textarea,
-  .fs-input {
+  .fs-input,
+  .fs-select {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
-  /* Make text areas a bit smaller for mobile */
+  /* Textareas smaller for mobile */
   .fs-textarea {
     min-height: 4rem;
   }
 
-  /* Left-align submit button */
+  /* Label above inputs */
+  .fs-label {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  /* Submit button aligned left */
   .fs-button-group {
-    grid-column: 1 / -1;
     display: flex;
     justify-content: flex-start;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .fs-button {
@@ -428,18 +439,25 @@ fieldset {
     font-size: 0.875rem;
   }
 
-  /* Keep footer below content */
+  /* Checkbox field stacked properly */
+  .fs-checkbox-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Make footer sit below the form */
   footer {
     position: static;
     margin-top: 2rem;
   }
 
-  /* Optional: make legend titles smaller for tight space */
+  /* Smaller fieldset titles */
   .fs-fieldset-title {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
 }
+
 
 
 /* For very large screens (bigger than 1920px / Full HD) */
