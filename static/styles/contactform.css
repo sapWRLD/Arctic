@@ -371,3 +371,41 @@ fieldset {
   text-align: center;
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .fs-form {
+    grid-template-columns: 1fr; /* Stack fields */
+  }
+  body{
+    margin-bottom: 30rem;
+    margin-top: -5rem;
+  }
+  .card.glass-card {
+    width: 90%;
+    max-width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    margin-inline: auto; /* Centers the card */
+  }
+
+  .fs-field,
+  .fs-description {
+    width: 100%; /* Let fields expand naturally */
+  }
+
+  .fs-button-group {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+  }
+
+  .fs-button {
+    width: fit-content;
+    position: static; /* No absolute positioning */
+  }
+
+  footer {
+    position: static;
+  }
+}
+

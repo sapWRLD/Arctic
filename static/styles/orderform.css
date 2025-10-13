@@ -371,3 +371,91 @@ fieldset {
   text-align: center;
   white-space: nowrap;
 }
+@media (max-width: 992px) {
+  .card.glass-card {
+    width: 80%;
+  }
+
+  .fs-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  /* Stack form in one column */
+  .fs-form {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Make card narrower and centered */
+  .card.glass-card {
+    width: 95%;
+    max-width: 17rem; /* Thinner layout */
+    margin: 6rem auto 3rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Stack fields full width */
+  .fs-field,
+  .fs-description,
+  .fs-textarea,
+  .fs-input {
+    width: 100%;
+  }
+
+  /* Make text areas a bit smaller for mobile */
+  .fs-textarea {
+    min-height: 4rem;
+  }
+
+  /* Left-align submit button */
+  .fs-button-group {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .fs-button {
+    position: static;
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  /* Keep footer below content */
+  footer {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  /* Optional: make legend titles smaller for tight space */
+  .fs-fieldset-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* For very large screens (bigger than 1920px / Full HD) */
+@media (min-width: 1921px) {
+  .card.glass-card {
+    width: 70rem;
+    margin-top: 8rem;
+  }
+
+  .fs-input,
+  .fs-textarea {
+    font-size: 1.1rem;
+  }
+
+  .fs-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
