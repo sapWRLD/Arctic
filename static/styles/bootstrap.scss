@@ -43,58 +43,80 @@
         }
     }
 }
+#navbar{
+    padding-bottom:0;
+}
 
 @media (max-width: 991.98px) {
-
     .navbar-collapse {
-        background-color: var(--bs-body-bg);
+        background-color: var(--glass-card-bg);
         border-radius: 10px;
-        border: 1px solid var(--bs-border-color);
+        /*border: 1px solid var(--bs-border-color);*/
         padding: 1rem;
         margin: 0.5rem;
+        margin-bottom: 0;
     }
 
 
-    .navbar-collapse .nav-link {
-        display: block;
-        margin: 0.5rem 0;
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+    }
+
+    .navbar-nav .nav-item {
+        flex: 1 1 100%;
+        width: 100% !important;
+    }
+
+    .navbar-nav .nav-link {
+        display: block !important;
+        width: 100% !important;
         text-align: center;
         border: 1px solid var(--bs-border-color);
         border-radius: 8px;
         background-color: var(--bs-body-tertiary);
+        margin: 0.5rem 0;
+        padding: 0.75rem 1rem;
     }
 
-    .navbar-collapse .nav-link:hover {
-        background-color: var(--bs-warning);
+    .navbar-nav .nav-link:hover {
+        background-color: var(--bs-primary);
+        color: #fff;
     }
+
+    #navbar {
+        padding-bottom: 0.5rem;
+    }
+
 
     .col {
         display: flex;
         justify-content: center;
         margin-bottom: 1.5rem;
     }
-    /*#small-text-sectionone , #arrowdown{
-        display: none !important;
-        
-    }*/
-    #maincard-button{
+
+    #maincard-button {
         margin-top: 2.5rem;
     }
-    .sections{
+
+    .sections {
         #section-two {
             height: fit-content;
             padding-bottom: 4rem;
-
         }
-        #section-one{
+
+        #section-one {
             height: fit-content;
-            #section-one-p{
-                display: none;
-            }
+
+        #section-one-p {
+            display: none;
+        }
         }
     }
-    
 }
+
 tbody{
     .invalidcheck{
         color: red;
