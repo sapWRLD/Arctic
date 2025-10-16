@@ -44,7 +44,7 @@
     </div>
     </nav>
 </header>
-<body class="pt-5 bg-body-gradient-180">
+<body class="pt-5 bg-body-gradient-180" style="height: 100vh;">
     <div class="card glass-card mx-auto my-5 p-4" style="width: 60rem;">
         <form
             action="https://formspree.io/f/xwprwwvy"
@@ -53,201 +53,75 @@
             method="POST"
             >
             <fieldset>
-            <legend class="fs-fieldset-title">Project Information</legend>
-            <div class="fs-field">
-                <label class="fs-label" for="project-name">Project Name</label>
-                <input
-                    class="fs-input"
-                    id="project-name"
-                    name="project-name"
-                    placeholder="Enter the project name"
-                    required
-                />
-            </div>
-            <div class="fs-field">
-                <label class="fs-label" for="project-number">Project Number</label>
-                <input
-                    class="fs-input"
-                    id="project-number"
-                    name="project-number"
-                    placeholder="Enter the project number"
-                    required
-                />
-            </div>
-            <div class="fs-field">
-                <label class="fs-label" for="client-name">Client/Customer Name</label>
-                <input
-                    class="fs-input"
-                    id="client-name"
-                    name="client-name"
-                    placeholder="Enter the client/customer name"
-                    required
-                />
-            </div>
-            <div class="fs-field">
-                <label class="fs-label" for="contact-email">Contact Email</label>
-                <input
-                    class="fs-input"
-                    id="contact-email"
-                    name="contact-email"
-                    placeholder="Enter the contact email"
-                    required
-                />
-            </div>
-            <div class="fs-field">
-                <label class="fs-label" for="contact-phone">Contact Phone Number</label>
-                <input
-                    class="fs-input"
-                    id="contact-phone"
-                    name="contact-phone"
-                    placeholder="Enter the contact phone number"
-                    required
-                />
-            </div>
-            </fieldset>
-            <fieldset>
-                <legend class="fs-fieldset-title">Change Order Details</legend>
+                <legend class="fs-fieldset-title">Order Details</legend>
             <div class="fs-field">
                 <label class="fs-label" for="change-order-number">
-                    Change Order Number
+                    First Name*
                 </label>
                 <input
                     class="fs-input"
-                    id="change-order-number"
-                    name="change-order-number"
-                    placeholder="Enter the change order number"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter Your Name"
                     required
                 />
                 </div>
                 <div class="fs-field">
-                <label class="fs-label" for="date-of-request">Date of Request</label>
+                <label class="fs-label" for="date-of-request">Surname*</label>
                 <input
                     class="fs-input"
-                    id="date-of-request"
-                    name="date-of-request"
-                    placeholder="Enter the request date in MM-DD-YYYY format"
+                    id="Surname"
+                    name="Surename"
+                    placeholder="Enter Your Surname"
                     required
                 />
                 </div>
                 <div class="fs-field">
-                <label class="fs-label" for="requested-by">Requested By</label>
+                <label class="fs-label" for="requested-by">Company</label>
                 <input
                     class="fs-input"
-                    id="requested-by"
-                    name="requested-by"
-                    placeholder="Enter the name of the requester"
+                    id="Company"
+                    name="Company"
+                    placeholder="Enter the name of your company"
+                />
+                </div>
+                <div class="fs-field">
+                <label class="fs-label" for="requester email">Email*</label>
+                <input
+                    class="fs-input"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email"
                     required
                 />
                 </div>
                 <div class="fs-field">
-                <label class="fs-label" for="requester email">Requester Email</label>
+                <label class="fs-label" for="requester email">Phone Number*</label>
                 <input
+                    type=""
                     class="fs-input"
-                    id="requester email"
-                    name="requester email"
-                    placeholder="Enter the email of the requester"
+                    id="phone"
+                    name="Phone"
+                    placeholder="Enter Your Phone Number"
                     required
                 />
+                </div>
+                <div class="fs-field">
+                    <label class="fs-label" for="Package-type">Package</label>
+                    <select class="fs-select" id="Package-type" name="Package-type" required style="background-color: rgb(59, 59, 59);">
+                    <option value="Basic">Basic</option>
+                    <option value="standard">Standard</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="custom">Custom</option>
+                    </select>
                 </div>
                 <div class="fs-field col-span-full">
-                <label class="fs-label" for="change-description">
-                    Description of Change
-                </label>
+                <label class="fs-label" for="infobox">More info about your site</label>
                 <textarea
                     class="fs-textarea"
-                    id="change-description"
-                    name="change-description"
-                    placeholder="Provide details about the requested change"
-                    required
-                ></textarea>
-                </div>
-                <div class="fs-field col-span-full">
-                <label class="fs-label" for="reason-for-change">Reason for Change</label>
-                <textarea
-                    class="fs-textarea"
-                    id="reason-for-change"
-                    name="reason-for-change"
-                    placeholder="e.g., &#x27;Client request,&#x27; &#x27;Budget adjustments,&#x27; etc."
-                    required
-                ></textarea>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend class="fs-fieldset-title">Cost and Schedule Impact</legend>
-                <div class="fs-field">
-                <label class="fs-label" for="additional-cost">
-                    Estimated Additional Cost
-                </label>
-                <input
-                    class="fs-input"
-                    id="additional-cost"
-                    name="additional-cost"
-                    placeholder="Enter the estimated additional cost"
-                    required
-                />
-                </div>
-                <div class="fs-field">
-                <label class="fs-label" for="adjusted-total-cost">
-                    Adjusted Total Cost
-                </label>
-                <input
-                    class="fs-input"
-                    id="adjusted-total-cost"
-                    name="adjusted-total-cost"
-                    placeholder="Enter the adjusted total cost"
-                    required
-                />
-                </div>
-                <div class="fs-field col-span-full">
-                <label class="fs-label" for="schedule-impact">Impact on Schedule</label>
-                <textarea
-                    class="fs-textarea"
-                    id="schedule-impact"
-                    name="schedule-impact"
-                    placeholder="Describe the schedule impact, if any"
-                ></textarea>
-                </div>
-                <div class="fs-field col-span-full">
-                <label class="fs-label" for="new-completion-date">
-                    New Completion Date
-                </label>
-                <input
-                    class="fs-input"
-                    id="new-completion-date"
-                    name="new-completion-date"
-                    placeholder="Enter the new completion date in MM-DD-YYYY format"
-                />
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend class="fs-fieldset-title">Approval and Acknowledgment</legend>
-                <div class="fs-field">
-                <label class="fs-label" for="approval-by">Approval By (Name)</label>
-                <input
-                    class="fs-input"
-                    id="approval-by"
-                    name="approval-by"
-                    placeholder="Enter the name of the approver"
-                    required
-                />
-                </div>
-                <div class="fs-field">
-                <label class="fs-label" for="approval-date">Approval Due Date</label>
-                <input
-                    class="fs-input"
-                    id="approval-date"
-                    name="approval-date"
-                    placeholder="Enter the approval due date in MM-DD-YYYY format"
-                    required
-                />
-                </div>
-                <div class="fs-field col-span-full">
-                <label class="fs-label" for="comments-notes">Comments/Notes</label>
-                <textarea
-                    class="fs-textarea"
-                    id="comments-notes"
-                    name="comments-notes"
-                    placeholder="Add any additional remarks (optional)"
+                    id="infobox"
+                    name="infobox"
+                    placeholder="Describe any specifics about the site your wanting."
                 ></textarea>
                 </div>
             </fieldset>
@@ -286,5 +160,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="js/copyright.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>
