@@ -4,6 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 :root,
 [data-bs-theme=light] {
@@ -12001,10 +12002,30 @@ textarea.form-control-lg {
   --glass-card-bg: rgba(18, 18, 18, 0.3);
   --glass-card-border: rgba(255, 255, 255, 0.1);
   --bs-body-color: #ffffff;
+  --bs-btn-primary: #23494c;
+  --color-primary-active: #122d30;
   --bs-primary: #0dcaf0;
   --bs-secondary: #adb5bd;
   --bs-border-color: #343a40;
+  --color-border-active: #23494c;
+  --color-border-default: #94a3b8;
+  --color-highlight: #7ecac7;
   --bs-body-tertiary: #1e1e1e;
+  --font-family-body: "Inter", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family-body);
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.btn {
+  background: var(--bs-btn-primary);
+}
+.btn:hover {
+  background-color: var(--color-primary-active);
 }
 
 @media (min-width: 2550px) {
