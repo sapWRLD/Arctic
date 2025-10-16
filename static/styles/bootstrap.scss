@@ -282,6 +282,9 @@ tbody{
     grid-template: 'title icon' 'content content' 'bar bar' / 1fr auto;
     font-family: system-ui, sans-serif;
     color: #444447;
+    &:hover{
+        transform: scale(1.15);
+    }
 .title {
     color: #ffffff;
         font-size: 1.5rem;

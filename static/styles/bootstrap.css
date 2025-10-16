@@ -12258,6 +12258,9 @@ tbody p {
   font-family: system-ui, sans-serif;
   color: #444447;
 }
+.custom-card:hover {
+  transform: scale(1.15);
+}
 .custom-card .title {
   color: #ffffff;
   font-size: 1.5rem;
