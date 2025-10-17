@@ -11999,6 +11999,15 @@ textarea.form-control-lg {
       rgba(10, 44, 63, 1) 49%,
       rgba(18, 18, 18, 1) 79%
   );
+  --bs-body-gradient-bottom-right: linear-gradient(
+      140deg,
+      rgba(26, 93, 138, 1) 0%,
+      rgba(15, 76, 117, 1) 12%,
+      rgba(0, 48, 74, 1) 34%,
+      rgba(10, 44, 63, 1) 77%,
+      rgba(17, 21, 23, 1) 94%,
+      rgba(18, 18, 18, 1) 100%
+      );
   --glass-card-bg: rgba(18, 18, 18, 0.3);
   --glass-card-border: rgba(255, 255, 255, 0.1);
   --bs-body-color: #ffffff;
