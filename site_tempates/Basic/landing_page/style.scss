@@ -1,0 +1,81 @@
+$primary: #007bff;
+$dark: #0b132b;
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(120deg, $primary, darken($primary, 15%));
+  color: white;
+  padding-top: 100px;
+
+  .hero-images {
+    img {
+      border-radius: 15px;
+      margin: 0 10px;
+      opacity: 0.9;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .delay-1 { animation-delay: 0s; }
+    .delay-2 { animation-delay: 1s; }
+    .delay-3 { animation-delay: 2s; }
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.delay-1 { transition-delay: 0.2s; }
+  &.delay-2 { transition-delay: 0.4s; }
+}
+
+#pricing .card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+footer {
+  background-color: $dark;
+}
