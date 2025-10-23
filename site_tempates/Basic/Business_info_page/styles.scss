@@ -1,0 +1,30 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    background: linear-gradient(135deg, #e3f2fd, #fff);
+}
+
+.card img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    transition: transform 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+.navbar .dropdown-menu {
+    border-radius: 0.5rem;
+}
+
+.navbar .dropdown-item:hover {
+    background: #f1f1f1;
+}
