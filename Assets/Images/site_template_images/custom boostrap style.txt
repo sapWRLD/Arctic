@@ -1,0 +1,14 @@
+1: include the js for bootstrap in the project head 
+
+2: make or enter the css folder
+	- create a nodeproject 'npm init' name; custom bootstrap
+	- then npm install --save bootstrap
+	
+3: create in the css 2 now file 1 bootstrap.scss and the other bootstrap.css
+	-import the css file into the head of the project <link rel="stylesheet" href="css/bootstrap.css">
+	
+4: import bootstrap into the scss with @import "node_modules/bootstrap/scss/bootstrap";
+	- add custom things above it
+	
+5: to use it open the css folder in de terminal and enter 'sass bootstrap.scss bootstrap.css'
+	- anytime after you have done this all changes will automatically be apply'd to the right bootstrap.css file

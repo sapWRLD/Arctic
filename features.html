@@ -7,52 +7,169 @@
     <link rel="stylesheet" href="static/styles/bootstrap.css">
     <link rel="stylesheet" href="static/styles/animations.css">
     <link rel="icon" type="icon" href="Assets/Images/logoicon.png">
-
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMTRQSSFB5"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<body class="py-5 bg-body-gradient-180" style="min-height: 100vh;">
 
-    gtag('config', 'G-GMTRQSSFB5');
-</script>
 <header>
     <!-- Navbar -->
-    <nav class="navbar glass-bar navbar-expand-lg fixed-top z-1 " style="padding-bottom: 0">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="Assets/Images/transparent_icon.png" width="30" height="30" alt="icon">Arctiq</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" id="menu">
-            <li class="nav-item text-center border-right">
-            <a class="nav-link current px-2" href="index.html">Home</a>
-            </li>
-            <li class="nav-item text-center border-right active ">
-            <a class="nav-link px-2" href="#" aria-current="page">Templates</a>
-            </li>
-            <li class="nav-item text-center border-right">
-            <a class="nav-link px-2" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item text-center border-right border-left">
-            <a class="nav-link px-2" href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar glass-bar navbar-expand-lg fixed-top z-1" style="padding-bottom: 0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Assets/Images/transparent_icon.png" width="30" height="30" alt="icon">Arctiq</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="menu">
+                    <li class="nav-item text-center border-right">
+                        <a class="nav-link current px-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center border-right active">
+                        <a class="nav-link px-2" href="#" aria-current="page">Templates</a>
+                    </li>
+                    <li class="nav-item text-center border-right">
+                        <a class="nav-link px-2" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item text-center border-right border-left">
+                        <a class="nav-link px-2" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </nav>
 </header>
-<body class="pt-5 text-center">
-    <h1>Templates are in development</h1>
-<footer class=" fixed-bottom py-1 text-center mt-auto z-1" id="footer">
-    <p  style="margin-bottom: 0.05rem;" id="copyright">d</p>
+
+<section class="title py-5">
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="card glass-card mx-auto text-center" style="width: 65rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Template Previews</h5>
+                    <p class="card-text" style="height: 5rem;">
+                        On this page, you will find preview videos of site templates along with explanations for each page.
+                    </p><p class="fw-bold">Please note all templates are still in development and are subject to change. All template previews shown are the current versions.</p><p class="fw-bold">Please feel free to contact us about templates. We are happy to make changes or add requested templates. Contact us at <a href="contact.html">Contact</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <h2 class="text-center mb-4">Basic Templates</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('Assets/videos/Landing_page.mp4')">
+                <img src="Assets/Images/site_template_images/Landing_page.png" class="card-img-top" alt="Landing Page">
+                <div class="card-body">
+                    <h5 class="card-title">Landing page Template</h5>
+                    <p class="card-text">A simple, clean layout perfect for landing pages and small portfolios.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('Assets/videos/restosite.mp4')">
+                <img src="Assets/Images/site_template_images/resto.png" class="card-img-top" alt="Resto Template">
+                <div class="card-body">
+                    <h5 class="card-title">Restaurent Site Template</h5>
+                    <p class="card-text">Another simple design, optimized for mobile-first performance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('Assets/videos/Corprate_startup_template.mp4')">
+                <img src="Assets/Images/site_template_images/Corp_pagepng.png" class="card-img-top" alt="Corprate_page">
+                <div class="card-body">
+                    <h5 class="card-title">Business site Template</h5>
+                    <p class="card-text">Another simple design, optimized for mobile-first performance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('Assets/videos/blog_starter.mp4')">
+                <img src="https://placehold.co/600x400?text=No Image" class="card-img-top" alt="Corprate_page">
+                <div class="card-body">
+                    <h5 class="card-title">Starter blog Template</h5>
+                    <p class="card-text">Another simple design, optimized for mobile-first performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mt-5 mb-4">Standard Templates</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('videos/standard1.mp4')">
+                <img src="Assets/Images/standard1.png" class="card-img-top" alt="Standard Template 1">
+                <div class="card-body">
+                    <h5 class="card-title">Standard Template 1</h5>
+                    <p class="card-text">Balanced design with sections for services, testimonials, and contact info.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more standard templates here -->
+    </div>
+
+    <h2 class="text-center mt-5 mb-4">Advanced Templates</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('videos/advanced1.mp4')">
+                <img src="Assets/Images/advanced1.png" class="card-img-top" alt="Advanced Template 1">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced Template 1</h5>
+                    <p class="card-text">Includes advanced animations, multi-page layouts, and responsive sections.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mt-5 mb-4">Custom Templates</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card template-card" onclick="openVideo('videos/custom1.mp4')">
+                <img src="Assets/Images/custom1.png" class="card-img-top" alt="Custom Template 1">
+                <div class="card-body">
+                    <h5 class="card-title">Custom Template 1</h5>
+                    <p class="card-text">Fully customizable template tailored to your brand and style needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Lightbox -->
+<div class="video-lightbox" id="videoLightbox">
+    <span class="close-btn" onclick="closeVideo()">&times;</span>
+    <video id="lightboxVideo" controls autoplay></video>
+</div>
+
+<footer class="fixed-bottom py-1 text-center mt-auto z-1" id="footer">
+    <p style="margin-bottom: 0.05rem;" id="copyright">
+        &copy; <span id="year"></span> Arctiq
+    </p>
 </footer>
-    <!-- Bootstrap script setup-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="js/copyright.js"></script>
+
+<script>
+    // Lightbox functions
+    function openVideo(src) {
+        const lightbox = document.getElementById('videoLightbox');
+        const video = document.getElementById('lightboxVideo');
+        video.src = src;
+        lightbox.style.display = 'flex';
+    }
+    function closeVideo() {
+        const lightbox = document.getElementById('videoLightbox');
+        const video = document.getElementById('lightboxVideo');
+        video.pause();
+        video.src = '';
+        lightbox.style.display = 'none';
+    }
+
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

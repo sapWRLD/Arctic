@@ -12357,4 +12357,40 @@ tbody p {
   font-size: 1rem;
   line-height: 1.6;
   color: #e0e0e0;
+}
+
+.template-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.template-card:hover {
+  transform: scale(1.02);
+}
+
+.video-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.video-lightbox video {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.video-lightbox .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=bootstrap.css.map */
