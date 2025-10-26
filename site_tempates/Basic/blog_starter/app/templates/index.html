@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mb-4 text-center">Blog Posts</h1>
+
+<div class="row">
+    <div id="carouselExampleCaptions" class="carousel slide pb-5">
+        <div class="carousel-indicators">
+        {% for post in posts[:4] %}
+        <button type="button" data-bs-target="#carouselExampleCaptions" 
+                data-bs-slide-to="{{ loop.index0 }}"
+                {% if loop.first %}class="active" aria-current="true"{% endif %}
+                aria-label="Slide {{ loop.index }}">
+        </button>
+        {% endfor %}
+        </div>
+
+        <div class="carousel-inner">
+        {% for post in posts %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+            <img src="https://placehold.co/400x200" class="d-block w-100" alt="{{ post.title }}">
+            <div class="carousel-caption d-none d-md-block bg-opacity-50 rounded-3 p-2">
+            <h5>{{ post.title }} - {{post.date_created.strftime('%b %d, %Y')}}</h5>
+            <p>{{ post.content[:80] }}...</p>
+            <a href="{{ url_for('main.post', post_id=post.id) }}" class="btn btn-sm btn-light">Read More</a>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="row mt-4">
+    {% for post in posts %}
+    <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.content[:150] }}...</p>
+            <a href="{{ url_for('main.post', post_id=post.id) }}" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="card-footer text-muted">
+            {{ post.date_created.strftime('%b %d, %Y') }}
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
